@@ -1,8 +1,10 @@
+var path = require('path');
+
 module.exports = [{
 	method: 'GET',
 	path: '/',
 	handler: function (request, reply) {
-		reply.file('views/index.html');
+		reply.file(path.join(__dirname, '../views/index.html'));
 	}
 },
 {
@@ -10,7 +12,7 @@ module.exports = [{
 	path: '/{param*}',
 	handler: {
 		directory: {
-			path: 'public'
+			path: path.join(__dirname, '../public')
 		}
 	}
 }];
