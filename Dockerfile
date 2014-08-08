@@ -11,4 +11,4 @@ RUN cd /var/www && /home/ubuntu/node-v0.10.30-linux-x64/bin/npm install
 
 EXPOSE 80
 
-CMD ["/home/ubuntu/node-v0.10.30-linux-x64/bin/node", "/var/www/index"]
+CMD /home/ubuntu/node-v0.10.30-linux-x64/bin/node /var/www/index > /home/ubuntu/logs/log.txt 2>&1

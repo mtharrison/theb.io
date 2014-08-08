@@ -4,7 +4,7 @@
   "description": "Manage all your web bios from a simple and attractive web app",
   "main": "index.js",
   "scripts": {
-    "test": "npm test"
+    "test": "mocha --reporter=spec"
   },
   "repository": {
     "type": "git",
@@ -24,6 +24,7 @@
   },
   "homepage": "https://github.com/mtharrison/oneb.io",
   "dependencies": {
-    "hapi": "^6.4.0"
+    "hapi": "^6.4.0",
+    "mocha": "^1.21.4"
   }
 }
