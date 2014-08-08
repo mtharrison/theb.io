@@ -1,17 +1,9 @@
-var hapi = require('hapi');
-
 var Hapi = require('hapi');
-var server = new Hapi.Server(80);
 
-server.route({
-  method: 'GET',
-  path: '/',
-  handler: function (request, reply) {
-    reply('Hello, world!');
+var server = new Hapi.Server(80, require('./config/server-options'));
 
-  }
-});
+server.route(require('./config/routes'));
 
 server.start(function () {
-  console.log('Server running at:', server.info.uri);
+	console.log('Server running at:', server.info.uri);
 });

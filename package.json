@@ -24,6 +24,7 @@
   },
   "homepage": "https://github.com/mtharrison/oneb.io",
   "dependencies": {
+    "handlebars": "^2.0.0-alpha.4",
     "hapi": "^6.4.0",
     "mocha": "^1.21.4"
   }
