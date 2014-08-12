@@ -12,4 +12,9 @@ onebio.config(['$routeProvider', function($routeProvider) {
 
 }]);
 
-onebio.controller('IndexController', function() {});
+onebio.controller('IndexController', function($scope) {
+
+	$scope.login = function() {
+	};
+
+});
