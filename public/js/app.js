@@ -12,9 +12,16 @@ onebio.config(['$routeProvider', function($routeProvider) {
 
 }]);
 
-onebio.controller('IndexController', function($scope) {
+onebio.controller('IndexController', function($scope, $http) {
 
 	$scope.login = function() {
+
+		$('#loginTwitter').button('loading');
+
+		$http.get('/login')
+		.success(function(data){
+			window.location = "https://api.twitter.com/oauth/authenticate?oauth_token=" + data;
+		});
 	};
 
 });

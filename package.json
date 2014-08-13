@@ -26,6 +26,7 @@
   "dependencies": {
     "handlebars": "^2.0.0-alpha.4",
     "hapi": "^6.4.0",
-    "mocha": "^1.21.4"
+    "mocha": "^1.21.4",
+    "oauth": "^0.9.12"
   }
 }

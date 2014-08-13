@@ -1,3 +1,6 @@
+#OAuth config
+config/oauth.json
+
 # Logs
 logs
 *.log

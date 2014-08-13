@@ -1,0 +1,16 @@
+body {
+	background: #b19cd9;
+}
+
+#logo {
+	background: url(/images/logo.png);
+	width: 500px;
+	height: 292px;
+	display: block;
+	margin: auto;
+}
+
+#loginTwitter {
+	margin: auto;
+	display: block;
+}

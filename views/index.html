@@ -6,15 +6,17 @@
 	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
 	<link rel="stylesheet" href="/css/style.css">
 	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.0.1/angular.min.js"></script>
-	<script src="/js/app.js"></script>
+	<script src="http://code.jquery.com/jquery-2.1.1.min.js"></script>
+	<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+	<script src="/js/app.js"></script>	
 </head>
 <body ng-app="onebio">
 	<div class="container">
 		<div class="row">
 			<div class="col-md-12">
-				<div class="page-header">
-					<h1>oneb.io <small>Manage your web identities</small></h1>
-				</div>
+				<header>
+					<a id="logo" href="/"></a>
+				</header>
 				<ng-view></ng-view>
 			</div>
 		</div>
