@@ -1,1 +1,7 @@
-<button id="loginTwitter" ng-click="login()" class="btn btn-large btn-primary">Login with Twitter</button>
+<div ng-show="loggedIn">
+  <textarea class="form-control" name=""rows="8" cols="40">{{twitterBio}}</textarea>
+  <button class="btn btn-primary">Save Bio</button>
+</div>
+<div ng-hide="loggedIn">
+  <button id="loginTwitter" ng-click="login()" class="btn btn-large btn-primary form-control">Login with Twitter</button>
+</div>
