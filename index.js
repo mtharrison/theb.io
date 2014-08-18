@@ -1,6 +1,7 @@
 var Hapi = require('hapi');
+var port = process.env.THEBIO_PORT || 80;
 
-var server = new Hapi.Server(80, require('./config/server-options'));
+var server = new Hapi.Server(port, require('./config/server-options'));
 
 server.state('oauth', {
     encoding: 'base64json'

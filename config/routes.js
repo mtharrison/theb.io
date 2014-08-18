@@ -24,6 +24,7 @@ module.exports = [{
 	handler: function (request, reply) {
 		oauth.getOAuthRequestToken(function(error, oauth_token, oauth_token_secret, results){
 			var token = {token: oauth_token, secret: oauth_token_secret};
+			console.log("req token", token);
 			reply(oauth_token).state('oauth', token);
 		});
 	}
