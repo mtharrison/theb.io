@@ -4,7 +4,8 @@
   "description": "Manage all your web bios from a simple and attractive web app",
   "main": "index.js",
   "scripts": {
-    "test": "mocha --reporter=spec"
+    "test": "mocha --reporter=spec",
+    "start": "THEBIO_PORT=3000 node index.js"
   },
   "repository": {
     "type": "git",
